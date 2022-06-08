@@ -1,2 +1,3 @@
-# Make-Code-Jack
- Make.Code.Hack Maker Badge
+# Make-Code-Hack
+ Make.Code.Hack Repo
+
