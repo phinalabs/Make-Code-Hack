@@ -1,10 +1,17 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
-	int x = 0;
-	int y = 0;
+	uint16_t x = 0;
+	uint16_t y = 0;
 	uint8_t byte1 = 0;
-	unsigned char byte2 = 0;
+	uint8_t byte2 = 0;
+	char name[20];
+	//enter name
+	printf("Enter your name : ");
+	scanf("%s", &name);
+	printf("%20c\n\tname\n%20c", '-', name, '-');
+	
 	//enter an integer value
 	printf("Enter Value : ");
 	scanf("%d", &x);
@@ -17,7 +24,7 @@ int main() {
 	byte1 = x & 0xFF;
 	byte2 = (x >> 8) & 0xFF;
 	//print upper and lower bytes
-	printf("Encoded values: 0x%02X, 0x%02X\n", byte1, byte2);
+	printf("Encoded values: %#02x, %#02x\n", byte1, byte2);
 	//reconstruct int from bytes
 	y = ((int)byte2 << 8) | byte1;
 	//print decoded value
