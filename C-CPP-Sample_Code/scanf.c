@@ -3,7 +3,7 @@
 int main() {
 	int x = 0;
 	int y = 0;
-	unsigned char byte1 = 0;
+	uint8_t byte1 = 0;
 	unsigned char byte2 = 0;
 	//enter an integer value
 	printf("Enter Value : ");
