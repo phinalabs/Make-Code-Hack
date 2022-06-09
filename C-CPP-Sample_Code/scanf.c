@@ -24,7 +24,7 @@ int main() {
 	byte1 = x & 0xFF;
 	byte2 = (x >> 8) & 0xFF;
 	//print upper and lower bytes
-	printf("Encoded values: %#02x, %#02x\n", byte1, byte2);
+	printf("Encoded values: 0x%02x, 0x%02x\n", byte1, byte2);
 	//reconstruct int from bytes
 	y = ((int)byte2 << 8) | byte1;
 	//print decoded value
