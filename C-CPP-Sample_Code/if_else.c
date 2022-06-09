@@ -2,23 +2,35 @@
 #include <stdint.h>
 
 int main() {
-	uint16_t num1;
-	uint16_t num2;
-	uint16_t ans = 0;
+	//declare variables
+	int num1;
+	int num2;
 	char op;
 	
-	printf("Enter Num 1: \n"); scanf("%d", num1);
-	printf("Enter Num 2: \n"); scanf("%d", num2);
-	printf("Operation: \n"); scanf("%c", op);
-	
+	int ans = 0;
+	//enter number 1
+	printf("Enter Num 1:"); scanf("%d", &num1);
+	// enter number 2
+	printf("Enter Num 2:"); scanf("%d", &num2);
+	//enter operation
+	scanf("%c", &op);
+	printf("Operation: "); scanf("%c", &op);
+	printf("\n------------\n");
+	printf("N1: %d, N2: %d, OP: %c\n", num1, num2, op);
+	//addition
 	if(op == 'A') ans = num1 + num2;
-	if(op == 'B') ans = num1 * num2;
-	if(op == 'C') ans = num1 / num2;
-	if(op == 'D') ans = num1 - num2;
+	//multiplication
+	else if(op == 'B') ans = num1 * num2;
+	// division
+	else if(op == 'C') ans = num1 / num2;
+	//substraction
+	else if(op == 'D') ans = num1 - num2;
+	//invalid operation
 	else{
 		printf("Invalid operation");
-		return 0;
+		return 0; //terminate
 	}
+	//print ans
 	printf("Ans : %d", ans);
 	
 	return 0;
