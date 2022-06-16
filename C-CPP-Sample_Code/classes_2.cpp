@@ -4,14 +4,15 @@
 #include <stdio.h>
 
 class sensor {
-	public:
-		int width;
-		int height;
-		int area(){
-			return width * height;
-		}
+public:
+	int width;
+	int height;
+	int area();
 };
 
+int sensor::area(){
+	return width * height;
+}
 
 int main() {
 	int area;
