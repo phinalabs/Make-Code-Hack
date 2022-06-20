@@ -7,6 +7,8 @@ class sensor {
 public:
 	int width;
 	int height;
+	int pins;
+	char package[20];
 	int area();
 };
 
@@ -19,8 +21,8 @@ int main() {
 	sensor x;
 	x.width = 20;
 	x.height = 5;
-	
+
 	area = x.area();
-	
+
 	printf("%d", area);
 }
