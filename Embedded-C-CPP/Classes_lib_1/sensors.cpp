@@ -1,15 +1,15 @@
 #include "sensors.h"
 
-sensor::sensor(int t, int h){
+sensor::sensor(int t, int h) {
 	temp = t;
 	hum = h;
 }
 
 /**
  * @brief return temperature set
- * @return int 
+ * @return int
  */
-int sensor::getTemp(){
+int sensor::getTemp() {
 	return temp;
 }
 
@@ -17,7 +17,7 @@ int sensor::getTemp(){
  * @brief return humidity set
  * @return int
  */
-int sensor::getHum(){
+int sensor::getHum() {
 	return hum;
 }
 
@@ -25,8 +25,8 @@ int sensor::getHum(){
  * @brief convert temp to kelvin
  * @return float
  */
-float sensor::tempToKelvin(){
-		return temp + 273.5;
+float sensor::tempToKelvin() {
+	return temp + 273.5;
 }
 
 
@@ -34,7 +34,7 @@ float sensor::tempToKelvin(){
  * @brief temp celcius to fahrenheit
  * @return float
  */
-float sensor::tempToFh(){
-	float fh = (temp * 9/5) + 32;
+float sensor::tempToFh() {
+	float fh = (temp * 9 / 5) + 32;
 	return fh;
 }

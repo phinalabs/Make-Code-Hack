@@ -19,6 +19,6 @@ int main() {
 	//print values
 	printf("Temp : %d oC, HUM : %d RH\n", temp, hum);
 	printf("Fahrenheit : %.1f, Kelvins: %.1f", fh, kelv);
-	
+
 	return 0;
 }
