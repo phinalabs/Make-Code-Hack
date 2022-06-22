@@ -1,24 +1,2 @@
 [Editors]
-Order = 0,1,2
-Focused = 0
-
-
-[Editor_0]
-CursorCol = 30
-CursorRow = 18
-TopLine = 1
-LeftChar = 1
-
-
-[Editor_1]
-CursorCol = 11
-CursorRow = 12
-TopLine = 1
-LeftChar = 1
-
-
-[Editor_2]
-CursorCol = 4
-CursorRow = 27
-TopLine = 7
-LeftChar = 1
+Order = 
