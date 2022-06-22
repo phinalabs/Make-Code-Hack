@@ -1,0 +1,37 @@
+# Project: Classes_lib_1
+# Makefile created by Red Panda C++ beta.0.12.6
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Classes_lib_1_private.res
+OBJ      = main.o sensors.o $(RES)
+LINKOBJ  = main.o sensors.o $(RES)
+CLEANOBJ  =  main.o sensors.o $(RES)
+LIBS     =  -s -static
+INCS     =  
+CXXINCS  =  
+BIN      = Classes_lib_1.exe
+CXXFLAGS = $(CXXINCS)  -O2 -pipe
+CFLAGS   = $(INCS)  -O2 -pipe
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) $(BIN) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp sensors.h
+	$(CPP) -c D:/Phinalabs/Github/Make-Code-Hack/Embedded-C-CPP/Classes_lib_1/main.cpp -o main.o $(CXXFLAGS) 
+
+sensors.o: sensors.cpp sensors.h
+	$(CPP) -c D:/Phinalabs/Github/Make-Code-Hack/Embedded-C-CPP/Classes_lib_1/sensors.cpp -o sensors.o $(CXXFLAGS) 
+
+Classes_lib_1_private.res: Classes_lib_1_private.rc 
+	$(WINDRES) -i Classes_lib_1_private.rc --input-format=rc -o Classes_lib_1_private.res -O coff 
+

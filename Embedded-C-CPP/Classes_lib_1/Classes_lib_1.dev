@@ -1,13 +1,13 @@
 [Project]
 filename = Classes_lib_1.dev
 name = Classes_lib_1
-UnitCount = 1
+UnitCount = 3
 Type = 1
 Ver = 3
 ObjFiles = 
 Includes = 
 Libs = 
-PrivateResource = 
+PrivateResource = Classes_lib_1_private.rc
 ResourceIncludes = 
 MakeIncludes = 
 Compiler = 
@@ -70,3 +70,29 @@ ProductName =
 ProductVersion = 
 AutoIncBuildNr = 0
 SyncProduct = 1
+
+
+[Unit2]
+FileName = sensors.h
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+FileEncoding = AUTO
+
+
+[Unit3]
+FileName = sensors.cpp
+CompileCpp = 1
+Folder = 
+Compile = 1
+Link = 1
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+DetectEncoding = 1
+FileEncoding = AUTO
