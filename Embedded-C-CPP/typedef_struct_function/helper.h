@@ -30,7 +30,7 @@ int calcMultiply(values_t *val) {
 }
 /*division*/
 float calcDivision(values_t *val) {
-	return ((float)val->x / (float)val->y);
+	return ((float)val->x / val->y);
 }
 
 #endif
