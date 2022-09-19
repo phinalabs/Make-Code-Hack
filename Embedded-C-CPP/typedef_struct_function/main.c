@@ -4,9 +4,6 @@
 #include "helper.h"
 
 int main(int argc, char *argv[]) {
-	int ans;
-	float div;
-	
 	/*values init*/
 	values_t values = {
 		.x = 6,
