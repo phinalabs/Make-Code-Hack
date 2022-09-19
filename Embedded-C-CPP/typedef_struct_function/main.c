@@ -28,12 +28,10 @@ int main(int argc, char *argv[]) {
 	printf("Values: x: %d and y : %d\n\n", values.x, values.y);
 	
 	/*addition*/
-	ans = fp->addFunc(&values);
-	printf("Addition: %d\n", ans);
+	printf("Addition: %d\n", fp->addFunc(&values));
 	
 	/*substraction*/
-	ans = fp->subFunc(&values);
-	printf("Substraction: %d\n", ans);
+	printf("Substraction: %d\n", fp->subFunc(&values));
 	
 	/*change values using coumpound literals*/
 	values= (values_t){
@@ -41,14 +39,12 @@ int main(int argc, char *argv[]) {
 		.y = 4
 	};
 	printf("\nValues: x: %d and y : %d\n\n", values.x, values.y);
-	
+
 	/*multiply*/
-	ans = fp->multiplyFunc(&values);
-	printf("Multiply: %d\n", ans);
+	printf("Multiply: %d\n", fp->multiplyFunc(&values));
 	
 	/*division*/
-	div = fp->divFunc(&values);
-	printf("Divide: %.2f\n", div);
+	printf("Divide: %.2f\n", fp->divFunc(&values));
 	
 	return 0;
 }
