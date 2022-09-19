@@ -8,8 +8,8 @@ int main(int argc, char *argv[]) {
 	float div;
 	/*values init*/
 	values_t values = {
-		.x = 4,
-		.y = 5
+		.x = 6,
+		.y = 7
 	};
 	/*functions init*/
 	funcs_t calcFuncs = {
@@ -18,26 +18,28 @@ int main(int argc, char *argv[]) {
 		.multiplyFunc = &calcMultiply,
 		.divFunc = &calcDivision
 	};
+	/*functions pointer*/
+	funcs_t *fp = &calcFuncs;
 	/*std output*/
 	printf("Embeedded C >> typedef + Function + struct Pointer Example\n\n");
 	printf("Values: x: %d and y : %d\n\n", values.x, values.y);
 	/*addition*/
-	ans = calcFuncs.addFunc(&values);
+	ans = fp->addFunc(&values);
 	printf("Addition: %d\n", ans);
 	/*substraction*/
-	ans = calcFuncs.subFunc(&values);
+	ans = fp->subFunc(&values);
 	printf("Substraction: %d\n", ans);
 	/*using coumpound literals*/
 	values= (values_t){
-		.x = 10,
-		.y = 20
+		.x = 9,
+		.y = 4
 	};
 	printf("\nValues: x: %d and y : %d\n\n", values.x, values.y);
 	/*multiply*/
-	ans = calcFuncs.multiplyFunc(&values);
+	ans = fp->multiplyFunc(&values);
 	printf("Multiply: %d\n", ans);
 	/*division*/
-	div = calcFuncs.divFunc(&values);
+	div = fp->divFunc(&values);
 	printf("Divide: %.2f\n", div);
 	
 	return 0;
