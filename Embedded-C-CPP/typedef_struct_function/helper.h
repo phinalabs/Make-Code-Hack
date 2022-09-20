@@ -1,3 +1,8 @@
+/*
+ * @author muchirijohn
+ * https://github.com/phinalabs/Make-Code-Hack/blob/main/Embedded-C-CPP
+*/
+
 #ifndef __HELPER__
 #define __HELPER__
 

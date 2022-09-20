@@ -1,6 +1,6 @@
 /*
  * @author muchirijohn
- * https://github.com/phinalabs/Make-Code-Hack/tree/main/Embedded-C-CPP
+ * https://github.com/phinalabs/Make-Code-Hack/blob/main/Embedded-C-CPP
 */
 
 #include <stdio.h>

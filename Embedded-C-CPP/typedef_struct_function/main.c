@@ -1,3 +1,8 @@
+/*
+ * @author muchirijohn
+ * https://github.com/phinalabs/Make-Code-Hack/blob/main/Embedded-C-CPP
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
