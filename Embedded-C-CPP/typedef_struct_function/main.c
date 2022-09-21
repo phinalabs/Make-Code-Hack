@@ -1,6 +1,6 @@
 /*
+ * Embedded C: Structs and Function Pointers
  * @author muchirijohn
- * https://github.com/phinalabs/Make-Code-Hack/blob/main/Embedded-C-CPP
 */
 
 #include <stdio.h>
@@ -9,6 +9,8 @@
 #include "helper.h"
 
 int main(int argc, char *argv[]) {
+	int ans = 0;
+	float f_ans = 0;
 	/*values init*/
 	values_t values = {
 		.x = 6,
@@ -23,17 +25,19 @@ int main(int argc, char *argv[]) {
 	};
 	
 	/*functions pointer*/
-	funcs_t *fp = &calcFuncs;
+	funcs_t *func_p = &calcFuncs;
 	
 	/*std output*/
 	printf("Embedded C >> typedef + Function + struct Pointer Example\n\n");
 	printf("Values: x: %d and y : %d\n\n", values.x, values.y);
 	
 	/*addition*/
-	printf("Addition: %d\n", fp->addFunc(&values));
+	ans = func_p->addFunc(&values);
+	printf("Addition: %d\n", ans);
 	
 	/*substraction*/
-	printf("Substraction: %d\n", fp->subFunc(&values));
+	ans = func_p->subFunc(&values);
+	printf("Substraction: %d\n", ans);
 	
 	/*change values using coumpound literals*/
 	values= (values_t){
@@ -43,10 +47,12 @@ int main(int argc, char *argv[]) {
 	printf("\nValues: x: %d and y : %d\n\n", values.x, values.y);
 
 	/*multiply*/
-	printf("Multiply: %d\n", fp->multiplyFunc(&values));
+	ans = func_p->multiplyFunc(&values);
+	printf("Multiply: %d\n", ans);
 	
 	/*division*/
-	printf("Divide: %.2f\n", fp->divFunc(&values));
+	f_ans = func_p->divFunc(&values);
+	printf("Divide: %.2f\n", f_ans);
 	
 	return 0;
 }
