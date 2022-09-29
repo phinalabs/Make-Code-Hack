@@ -56,9 +56,13 @@ int main(int argc, char *argv[])
     status_flag = create_array_with_malloc();
     /*print status*/
     if (status_flag == SUCCESS)
+    {
         printf("\nExecution Successful.");
+    }
     else
+    {
         printf("Execution Failed.");
+    }
     /*end*/
     return 0;
 }
