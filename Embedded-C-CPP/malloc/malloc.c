@@ -1,3 +1,8 @@
+/*
+ * Embedded C: Malloc
+ * @author muchirijohN
+ */
+
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -28,7 +33,7 @@ uint8_t create_array_with_malloc()
     }
     /*free up created memory space*/
     free(array);
-    /*success*/
+    /*end*/
     return 1;
 }
 
