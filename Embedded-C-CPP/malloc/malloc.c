@@ -6,35 +6,39 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include <stdbool.h>
+
+/*array size*/
+#define ARRAY_SIZE 10
 
 /* function- test malloc*/
-uint8_t create_array_with_malloc()
+bool create_array_with_malloc()
 {
-    /*array size*/
-    const uint8_t array_size = 10;
-    uint8_t i = 0;
-    uint8_t *array;
+    // int i = 0;
+    int *array;
 
     printf("Embedded C - Malloc\n");
     /*create memory space and get the poi nter*/
-    array = (uint8_t *)malloc(sizeof(uint8_t) * array_size);
+    array = (int *)malloc(sizeof(*array) * ARRAY_SIZE);
     /*check if an error occured - request failed*/
     if (array == NULL)
-        return 1;
-    /*set values*/
-    for (; i < array_size; i++)
     {
-        *(array + i) = i;
+        return false;
+    }
+    /*set values*/
+    for (int i = 0; i < ARRAY_SIZE; i++)
+    {
+        array[i] = i;
     }
     /*print values*/
-    for (i = 0; i < array_size; i++)
+    for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        printf(" %d", *(array + i));
+        printf(" %d", array[i]);
     }
     /*free up created memory space*/
     free(array);
     /*end*/
-    return 0;
+    return true;
 }
 
 /*main function*/
