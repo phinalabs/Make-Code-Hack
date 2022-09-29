@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("Execution Failed.");
+        printf("\nExecution Failed.");
     }
     /*end*/
     return 0;
