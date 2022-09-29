@@ -2,34 +2,35 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-
-/*function- test malloc*/
+/* function- test malloc*/
 uint8_t create_array_with_malloc()
 {
     /*array size*/
-    const uint8_t ARRAY_SIZE = 10;
+    const uint8_t array_size = 10;
     uint8_t i = 0;
-    printf("\nAllocate Memory Space\n");
-    /*create memory space*/
-    uint8_t *p = (uint8_t *)malloc(sizeof(uint8_t) * ARRAY_SIZE);
+    uint8_t *array;
+
+    printf("Embedded C - Mallocs\n");
+    /*create memory space and get the poi nter*/
+    array = (uint8_t *)malloc(sizeof(uint8_t) * array_size);
     /*check if an error occured - request failed*/
-    if(p == NULL) return 0;
-    /*set values */
-    for (; i < 10; i++)
+    if (array == NULL)
+        return 0;
+    /*set values*/
+    for (; i < array_size; i++)
     {
-        *(p + i) = i;
+        *(array + i) = i;
     }
     /*print values*/
-    for (i = 0; i < 10; i++)
+    for (i = 0; i < array_size; i++)
     {
-        printf(" %d", *(p + i));
+        printf(" %d", *(array + i));
     }
     /*free up created memory space*/
-    free(p);
+    free(array);
     /*success*/
     return 1;
 }
-
 
 /*main function*/
 int main(int argc, char *argv[])
