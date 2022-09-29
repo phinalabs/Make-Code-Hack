@@ -10,7 +10,7 @@ uint8_t create_array_with_malloc()
     uint8_t i = 0;
     uint8_t *array;
 
-    printf("Embedded C - Mallocs\n");
+    printf("Embedded C - Malloc\n");
     /*create memory space and get the poi nter*/
     array = (uint8_t *)malloc(sizeof(uint8_t) * array_size);
     /*check if an error occured - request failed*/
