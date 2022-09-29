@@ -23,7 +23,7 @@ bool create_array_with_malloc()
     /*check if an error occured - request failed*/
     if (array == NULL)
     {
-        return false;
+        return true;
     }
     /*set values*/
     for (int i = 0; i < ARRAY_SIZE; i++)
@@ -33,17 +33,23 @@ bool create_array_with_malloc()
     /*print values*/
     for (int i = 0; i < ARRAY_SIZE; i++)
     {
-        printf(" %d", array[i]);
+        printf("%d", array[i]);
     }
     /*free up created memory space*/
     free(array);
     /*end*/
-    return true;
+    return false;
 }
 
 /*main function*/
 int main(int argc, char *argv[])
 {
-    create_array_with_malloc();
+    bool status_flag;
+    /*check function execution status*/
+    status_flag = create_array_with_malloc();
+    /*print status*/
+    if(!status_flag) printf("\nExecution Successful.");
+    else printf("Execution Failed.");
+    /*end*/
     return 0;
 }
