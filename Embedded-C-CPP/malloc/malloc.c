@@ -20,7 +20,7 @@ uint8_t create_array_with_malloc()
     array = (uint8_t *)malloc(sizeof(uint8_t) * array_size);
     /*check if an error occured - request failed*/
     if (array == NULL)
-        return 0;
+        return 1;
     /*set values*/
     for (; i < array_size; i++)
     {
@@ -34,7 +34,7 @@ uint8_t create_array_with_malloc()
     /*free up created memory space*/
     free(array);
     /*end*/
-    return 1;
+    return 0;
 }
 
 /*main function*/
