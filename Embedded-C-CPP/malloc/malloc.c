@@ -11,6 +11,13 @@
 /*array size*/
 #define ARRAY_SIZE 10
 
+/*flags*/
+enum
+{
+    SUCCESS = 0,
+    FAIL = 1
+};
+
 /* function- test malloc*/
 bool create_array_with_malloc()
 {
@@ -48,8 +55,10 @@ int main(int argc, char *argv[])
     /*check function execution status*/
     status_flag = create_array_with_malloc();
     /*print status*/
-    if(!status_flag) printf("\nExecution Successful.");
-    else printf("Execution Failed.");
+    if (status_flag == SUCCESS)
+        printf("\nExecution Successful.");
+    else
+        printf("Execution Failed.");
     /*end*/
     return 0;
 }
