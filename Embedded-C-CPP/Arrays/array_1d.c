@@ -35,7 +35,7 @@ void create_1d_array_2()
     /*create array*/
     int array[ARRAY_LENGTH];
     /*optional - init array using memset*/
-    memset(array, 0,  sizeof(ARRAY_LENGTH) * ARRAY_LENGTH);
+    memset(array, 0,  sizeof(*array) * ARRAY_LENGTH);
     /*seed the random generator with time*/
     srand(time(NULL));
     /*set array values with random numbers*/
