@@ -21,8 +21,7 @@ void create_1d_array_1()
     /*create and initialize array*/
     int array[ARRAY_SIZE] = {10, 20, 30, 40};
     /*print array values*/
-    for (int i = 0; i < ARRAY_SIZE; i++)
-        printf("%d ", array[i]);
+    for (int i = 0; i < ARRAY_SIZE; i++) printf("%d ", array[i]);
 }
 
 /**
@@ -40,11 +39,9 @@ void create_1d_array_2()
     /*seed the random generator with time*/
     srand(time(NULL));
     /*set array values with random numbers*/
-    for (int i = 0; i < ARRAY_LENGTH; i++)
-        array[i] = rand();
+    for (int i = 0; i < ARRAY_LENGTH; i++) array[i] = rand();
     /*print array values*/
-    for (int i = 0; i < ARRAY_LENGTH; i++)
-        printf("%d ", array[i]);
+    for (int i = 0; i < ARRAY_LENGTH; i++) printf("%d ", array[i]);
 }
 
 int main(int argc, char *argv[])
