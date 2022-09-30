@@ -1,5 +1,5 @@
 /*
- * Embedded C: Malloc
+ * Embedded C: Arrays 1 Dimensional
  * @author muchirijohN
  */
 
@@ -9,7 +9,9 @@
 #include <String.h>
 #include <time.h>
 
+/*array length*/
 #define ARRAY_LEN 4
+
 /**
  * @brief Create a 1d array 1
  * using a compile time constant
@@ -45,10 +47,11 @@ void create_1d_array_2()
 
 int main(int argc, char *argv[])
 {
-    printf("\nArray using compile time constant\n");
+    printf("Embedded C: Arrays 1d\n");
+    printf("\ncreate array  using compile time constant\n");
     create_1d_array_1();
     
-    printf("\nArray using runtime-bound array\n");
+    printf("\ncreate runtime-bound array\n");
     create_1d_array_2();
     /*end*/
     return 0;
