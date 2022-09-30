@@ -1,5 +1,5 @@
 /*
- * Embedded C: Arrays 1 Dimensional
+ * Embedded C: Data Structures - Arrays 1 Dimensional
  * @author muchirijohN
  */
 
