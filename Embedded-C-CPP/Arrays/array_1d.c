@@ -10,7 +10,7 @@
 #include <time.h>
 
 /*array length*/
-#define ARRAY_LEN 4
+#define  ARRAY_LENGTH 4
 
 /**
  * @brief Create a 1d array 1
@@ -19,9 +19,9 @@
 void create_1d_array_1()
 {
     /*create and initialize array*/
-    int array[ARRAY_LEN] = {10, 20, 30, 40};
+    int array[ARRAY_LENGTH] = {10, 20, 30, 40};
     /*print array values*/
-    for (int i = 0; i < ARRAY_LEN; i++) printf("%d ", array[i]);
+    for (int i = 0; i < ARRAY_LENGTH; i++) printf("%d ", array[i]);
 }
 
 /**
@@ -31,17 +31,17 @@ void create_1d_array_1()
 void create_1d_array_2()
 {
     /*array length*/
-    const int array_length = 4;
+    const int ARRAY_LENGTHgth = 4;
     /*create array*/
-    int array[array_length];
+    int array[ARRAY_LENGTHgth];
     /*optional - init array using memset*/
-    memset(array, 0,  sizeof(array_length) * array_length);
+    memset(array, 0,  sizeof(ARRAY_LENGTHgth) * ARRAY_LENGTHgth);
     /*seed the random generator with time*/
     srand(time(NULL));
     /*set array values with random numbers*/
-    for (int i = 0; i < array_length; i++) array[i] = rand();
+    for (int i = 0; i < ARRAY_LENGTHgth; i++) array[i] = rand();
     /*print array values*/
-    for (int i = 0; i < array_length; i++) printf("%d ", array[i]);
+    for (int i = 0; i < ARRAY_LENGTHgth; i++) printf("%d ", array[i]);
 }
 
 
