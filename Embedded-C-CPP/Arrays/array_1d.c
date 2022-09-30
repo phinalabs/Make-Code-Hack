@@ -24,12 +24,12 @@ void create_1d_array_1()
 
 /**
  * @brief Create a 1d array 2
- *  using a local constant
+ *  using a runtime-bound array
  */
 void create_1d_array_2()
 {
     /*array length*/
-    const uint8_t array_length = 4;
+    const int array_length = 4;
     /*create array*/
     int array[array_length];
     /*optional - init array using memset*/
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     printf("\nArray using compile time constant\n");
     create_1d_array_1();
     
-    printf("\nArray using local constant\n");
+    printf("\nArray using runtime-bound array\n");
     create_1d_array_2();
     /*end*/
     return 0;
