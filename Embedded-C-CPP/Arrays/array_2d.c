@@ -1,5 +1,5 @@
-#/*
- * Embedded C: Data Structures - Arrays 2 Dimensional
+/*
+ * Embedded C: Data Structures - Arrays 2 Dimensional [Multi-dimensional]
  * @author muchirijohN
  */
 
