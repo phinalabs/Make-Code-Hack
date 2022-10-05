@@ -1,6 +1,6 @@
 /*
  * Embedded C: Data Structures - Arrays 1 Dimensional
- * @author muchirijohN
+ * @author muchirijohn
  */
 
 #include <stdint.h>

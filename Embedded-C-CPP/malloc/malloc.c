@@ -1,6 +1,6 @@
 /*
  * Embedded C: Malloc
- * @author muchirijohN
+ * @author muchirijohn
  */
 
 #include <stdio.h>

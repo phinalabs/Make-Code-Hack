@@ -1,6 +1,6 @@
 /*
  * Embedded C: Data Structures - Arrays 2 Dimensional [Multi-dimensional]
- * @author muchirijohN
+ * @author muchirijohn
  */
 
 #include <stdint.h>

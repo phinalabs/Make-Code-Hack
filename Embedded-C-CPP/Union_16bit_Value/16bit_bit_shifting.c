@@ -1,6 +1,6 @@
 /*
  * Embedded C: Union
- * @author muchirijohN
+ * @author muchirijohn
  */
 
 #include <stdio.h>
