@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*enum*/
+/*create enum*/
 typedef enum
 {
     ONE,
@@ -18,10 +18,7 @@ typedef enum
     SIX
 } COUNTER;
 
-/**
- * @brief test enum and switch statement
- * @param counter 
- */
+/*test enum and switch statement*/
 void enum_switch_test(COUNTER counter)
 {
     /*switch statement*/
