@@ -18,6 +18,10 @@ typedef enum
     SIX
 } COUNTER;
 
+/**
+ * @brief test enum and switch statement
+ * @param counter 
+ */
 void enum_switch_test(COUNTER counter)
 {
     /*switch statement*/
