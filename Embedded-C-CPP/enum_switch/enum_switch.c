@@ -14,30 +14,40 @@ typedef enum
     TWO,
     THREE,
     FOUR,
-    FIVE
+    FIVE,
+    SIX
 } COUNTER;
 
-/*main*/
-int main(int argc, char *argv[])
+void enum_switch_test(COUNTER counter)
 {
-
-    COUNTER count = TWO;
     /*switch statement*/
-    switch (count)
+    switch (counter)
     {
     case ONE:
         printf("ONE\n");
         break;
-    case TWO:
+    case TWO: 
         printf("TWO\n");
         break;
     case THREE:
         printf("THREE\n");
         break;
+    case FOUR:
+    case FIVE:
+        printf("FOUR or FIVE");
+        break;
     default:
         printf("Not Found.");
         break;
     }
+}
+
+/*main*/
+int main(int argc, char *argv[])
+{
+
+    COUNTER my_count = TWO;
+    enum_switch_test(my_count);
 
     return 0;
 }
