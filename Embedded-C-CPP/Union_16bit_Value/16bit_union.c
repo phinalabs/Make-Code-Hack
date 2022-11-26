@@ -16,7 +16,7 @@ typedef union
 		uint8_t LSB;
 		uint8_t MSB;
 	} REGISTER;
-} union_16bit_;
+} union_16bit_; 
 
 /**
  * @brief use union to convert LSB and MSB to 16 bit value
